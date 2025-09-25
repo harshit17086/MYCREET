@@ -1,0 +1,27 @@
+Rules while creating the api
+1. use the controller folder to write the logic in functions 
+
+
+2. while writting the controller make suer to use the
+ AsyncHandler.ts , ApiError.ts and the ApiResponse.ts from 
+ the utils folder
+
+
+3. if in a controller two or more creation is happening use the prisma transaction
+ feature create both the data in the transaction tx.example1.create and tx.example2.create
+
+
+5. if in any controller ie the route in which the user information is needed
+ use the auth.middleware.ts to get the user informaion directly from req.user
+
+6. services are there to generate the tokens 
+
+7. write the swagger documentation for the api routes 
+using the logic of the respective controller
+
+8. use this import { primsa } from "../db/db
+
+9. create swagger documentation for each route
+
+
+11. use zod for validation
